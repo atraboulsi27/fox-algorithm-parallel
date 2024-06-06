@@ -13,8 +13,11 @@ plt.xlabel('Number Processes')
 plt.ylabel('Execution Time (Seconds)')
 plt.title('Execution Time vs. Number Processes')
 
-# Show the exact numbers on the y axis
+# Show the exact numbers on the y-axis
 plt.yticks(execution_times, [f'{time:.2f}' for time in execution_times])
+
+# Show the exact numbers on the x-axis
+plt.xticks(numbers, [str(num) for num in numbers])
 
 # Display the plot
 plt.grid(True)
